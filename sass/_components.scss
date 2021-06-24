@@ -1,0 +1,229 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  align-items: center;
+  margin: 0 auto;
+  &__nav {
+    display: inherit;
+    list-style-type: none;
+  }
+  &__list {
+    display: block;
+    padding: 3.5rem 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    @media only screen and (max-width: 37.5em) {
+    color: $color-dark;
+    }
+  }
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+// header content
+
+.social {
+  //social
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+
+
+  &__paragraph {
+    color: $color-grey;
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 3rem;
+    bottom: 0;
+    transform: translateY(-100%);
+
+    &-icon {
+      background-image: linear-gradient(to right , $color-primary-dark, $color-primary-light);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 2rem;
+    }
+    &-span {
+      width: .5rem;
+      height: 5rem;
+      background-image: linear-gradient(to right , $color-primary-dark, $color-primary-light);
+    }
+  }
+
+
+
+  //social container
+  &__container {
+    padding: 3rem;
+    position: relative;
+    &-img {
+      width: 100%;
+    }
+    &-mouse {
+      padding: .7rem 1.8rem;
+      position: absolute;
+      bottom: 0;
+      left: -4rem;
+      box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+      border-radius: 50%;
+    }
+
+    &-logo {
+      width: 2.4rem;
+      height: 3rem;
+
+
+    }
+  }
+}
+
+
+//buttons
+.btn {
+   background-image: linear-gradient(to right , $color-primary-dark, $color-primary-light);
+  border: 1px solid transparent;
+   padding: 1.8rem 3rem;
+   cursor: pointer;
+   color: $color-white;
+  width: max-content;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: all .2s;
+
+  &:hover {
+   opacity: .8;
+  }
+}
+
+
+//biography
+.biography {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25em , 1fr));
+  grid-gap: 6rem;
+
+  @media only screen and (max-width: 60em) {
+grid-template-columns: 100% ;
+  }
+
+  &__img {
+    width: 100%;
+  }
+  &__image {
+    padding: 0 0 10rem 10rem;
+    @media only screen and (max-width: 60em){
+      padding: 5rem;
+    }
+  }
+
+  &__text {
+    background-image: url("../img/Group 182@2x.png") ;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    padding: 0 10rem 10rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  &__paragraph {
+    font-size: 1.5rem;
+    color: $color-grey;
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+// service section
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29em,1fr));
+  grid-gap: 7rem;
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    border-radius: 2rem;
+    z-index: 2;
+    padding: 3.5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  }
+  &__logo {
+    width: 6rem;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+  &__paragraph {
+    color: $color-grey;
+    font-size: 1.3rem;
+    margin: 4rem 0 auto 0;
+  }
+  &__button {
+    align-self: flex-end;
+  }
+}
+
+
+//pricing section
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29em, 1fr));
+  grid-gap: 10rem;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    justify-self: center;
+  }
+  &__paragraph {
+    font-size: 1.4rem;
+    color: $color-grey;
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+  }
+  &__cost {
+     margin-bottom: 2.5rem;
+    color: $color-primary-light;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  &__button {
+    &:hover {
+      border: 1px solid $color-primary-light;
+      -webkit-background-clip: text;
+      color: transparent;
+
+    }
+  }
+}

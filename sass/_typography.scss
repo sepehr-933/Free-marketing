@@ -1,0 +1,65 @@
+.heading-2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  display: block;
+  align-self: center;
+  &__alignment {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+  }
+}
+.heading-1 {
+  font-size: 6rem;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+}
+.heading-3 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  display: block;
+  text-transform: uppercase;
+}
+.heading-4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+
+}
+.heading-5 {
+  color: $color-primary-light;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.heading-6 {
+  font-size: 1.3rem;
+  color: $color-primary-light;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+
+
+//icons
+.transformed {
+  transform: rotate(90deg);
+}
+
+
+//padding
+.padding-sm {padding: 1.8rem 5rem}
+.padding-tiny {padding: 1.5rem 3rem}
+//margin-bottom
+.mar-bm-sm {margin-bottom: 4rem}
+.mar-bm-tiny {margin-bottom: 2rem}
+
+//centering
+.centering {
+  display: grid;
+  justify-items: center;
+}
+.fas,
+.fab{
+  margin-right: 1rem;
+}

@@ -1,0 +1,186 @@
+.header {
+   padding: 1rem 4rem;
+   background-image: url("../img/Bg Shape@2x.png");
+   background-position: top right;
+   background-repeat: no-repeat;
+   background-size: 60%;
+
+
+   &__content {
+      position: relative;
+      padding: 3rem 9rem 3rem 16rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+
+      @media only screen and (max-width: 46.875em) {
+          grid-template-columns: 90%;
+      }
+   }
+}
+.services {
+   background: url("../img/Group 1238@2x.png") no-repeat
+center center / cover;
+   padding:5rem 10rem 20rem 10rem;
+}
+.pricing {
+   background-color: rgba(#7E76F9 , 0.15);
+   padding: 10rem;
+   position: relative;
+   &__pagination {
+      display: flex;
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   &__bullet {
+      width: .6rem;
+      height: .6rem;
+      border-radius: 50%;
+      border: 1px solid $color-primary-light;
+      display: grid;
+      align-items: center;
+      &::before {
+         content: '';
+         display: block;
+         width: .6rem;
+         height: .6rem;
+         border-radius: 50%;
+         border: 1px solid $color-primary-light;
+         transform: translate(-200%, -10%);
+      }
+
+      &::after {
+         content: '';
+         display: block;
+         width: 1rem;
+         height: 1rem;
+         border-radius: 50%;
+         background-color: $color-primary-light;
+         transform: translate(170% , -100%);
+      }
+   }
+}
+
+
+//news Letter
+
+.newsLetter {
+   padding: 7rem ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+
+   &__h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+   }
+   &__form {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      &-container {
+         position: relative;
+      }
+   }
+   &__input {
+      background-color: #F6F7FB;
+      border: none;
+      border-bottom:1px solid transparent;
+      padding: 1.5rem 2rem;
+      margin-right: 1.5rem;
+      flex: 1;
+      height: min-content;
+      border-radius: .5rem;
+      &::-webkit-input-placeholder {
+         color: #999;
+         font-size: 10px;
+
+      }
+
+      &:focus {
+         outline: none;
+         border-bottom:1px solid $color-primary-light;
+      }
+   }
+   &__button {
+      padding: .5rem 3rem !important;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+   }
+}
+
+.footer {
+   position: relative;
+   overflow: hidden;
+   padding: 14rem 7rem 7rem 7rem ;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25em , 1fr));
+   @media only screen and (max-width: 1476px){
+      background-image: linear-gradient($color-primary-light, $color-primary-dark);
+      padding: 0 5rem 5rem 5rem;
+      margin-top: 7rem;
+   }
+   //footer background
+   &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url("../img/Bg Shape@2x.png");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      bottom:-186%;
+      left: -93%;
+      width: 200%;
+      height: 250%;
+      transform: rotate(149deg);
+
+      z-index: -1;
+
+
+      @media only screen and (max-width: 1476px){
+         background-image: none;
+      }
+   }
+   &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url("../img/Bg Shape@2x.png");
+      background-size: 120%;
+      background-repeat: no-repeat;
+      bottom:-187%;
+      left: -38%;
+      width: 140%;
+      height: 320%;
+      transform: rotate(135deg);
+      z-index: -2;
+      @media only screen and (max-width: 1476px){
+         background-image: none;
+      }
+   }
+
+   //footer content
+   &__columns {
+      color:$color-white ;
+      padding: 2rem;
+      transform: translateY(20%);
+   }
+   &__social-media {
+      display: flex;
+      color: $color-white;
+   }
+   &__time-open {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+   &__flex {
+      display: flex;
+   }
+}

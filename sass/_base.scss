@@ -1,0 +1,40 @@
+//color variables
+$color-primary-light : #6156F9 ;
+$color-primary-dark : #1A129F ;
+$color-dark : #42495B ;
+$color-white : #FFFFFF;
+$color-grey : #7A839E ;
+
+*,
+*::before ,
+*::after {
+  margin: 0;
+}
+// html
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 62.5em) {
+    font-size: 42%;
+  }
+
+}
+
+
+//body
+body {
+  box-sizing: inherit;
+  color: $color-dark;
+}
+
+// media queries
+
+$bp-huge : 75em;
+$bp-big : 56.25em;
+
